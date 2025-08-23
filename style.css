@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  padding: 0px 100px 0px 100px;
+  font-family: Arial, sans-serif;
+  background-color: #87e0ef;
+  align-items: center;
+  justify-content: space-between;
+}
+.row-2nav {
+  display: flex;
+  align-items: baseline;
+  gap: 50px;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+.nav-links {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-links a:not(:last-child)::after {
+  content: " | ";
+  color: black;
+}
+.baseline-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+  background-color: #778688ff;
+}
+.row-4baseline {
+  display: flex;
+  gap: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.notification-bar {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+}
+/*Main body */
+.main-container {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 100px 0px 100px;
+  gap: 20px;
+}
+
+.search-row {
+  background-color: lightgrey;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  width: 280px;
+  height: auto;
+  font-size: 12px;
+}
+.section {
+  border-bottom: 1px solid #ddd;
+}
+.section h4 {
+  background: #0dc2daff;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 4px solid #eee;
+}
+.section li:last-child {
+  border-bottom: none;
+}
+ .section li span {
+      flex: 1;
+    }
+.icon {
+  font-size: 14px;
+  color: #999;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #00bcd4;
+}
+
+.search-li {
+  list-style: none;
+  padding: 0;
+}
+.video-tutorials {
+  background-color: lightgrey;
+  width: 250px;
+}
+.tutorials-list {
+  list-style: none;
+  padding: 0;
+  width: 250px;
+  font-size: 12px;
+}
+
+/*Middle  body container */
+.entries {
+  width: 1200px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
