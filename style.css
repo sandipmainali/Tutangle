@@ -63,46 +63,38 @@ body {
 
 .search-row {
   background-color: lightgrey;
-  border: 1px solid #ddd;
-  border-radius: 0px;
-  width: 280px;
+  width: 300px;
   height: auto;
   font-size: 12px;
 }
-.section {
-  border-bottom: 1px solid #ddd;
-}
-.section h4 {
+
+.h1-list {
   background: #0dc2daff;
-  color: white;
-  padding: 10px;
   margin: 0;
+  color: white;
   font-size: 16px;
+  padding: 10px 10px 10px 10px;
 }
 
-.section ul {
+.search-li {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-.section li {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  font-size: 14px;
-  border-bottom: 4px solid #eee;
 }
-.section li:last-child {
-  border-bottom: none;
+.lists{
+padding: 20px 5px 10px 20px;
 }
- .section li span {
-      flex: 1;
-    }
+.lists:hover {
+  background-color: pink;
+}
+
 .icon {
   font-size: 14px;
   color: #999;
-  margin-left: 8px;
+  margin-left: 0px;
+  float: right;
   cursor: pointer;
 }
 
@@ -117,9 +109,11 @@ body {
 .video-tutorials {
   background-color: lightgrey;
   width: 250px;
+  border: 1px solid #ddd;
 }
 .tutorials-list {
   list-style: none;
+
   padding: 0;
   width: 250px;
   font-size: 12px;
@@ -134,3 +128,28 @@ h1 {
   font-size: 28px;
   margin-bottom: 20px;
 }
+
+.footer-lists{
+  background-color: grey;
+  margin-top: 10px;
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+  padding: 10px 100px 10px 100px;
+
+}
+.footerlink-lists{
+  padding: 10px 100px 10px 100px;
+
+}
+.footerlinks{
+  list-style: disc; /* Or circle, square, etc. for bullet type */
+   padding: 0;
+   margin: 0;
+   display: flex; /* Use flexbox for horizontal layout */
+    gap: 40px;
+}
+ ul li:first-child {
+      list-style-type: none; /* Remove bullet for the first item */
+    }
+
