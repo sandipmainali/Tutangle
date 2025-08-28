@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 .top-nav {
@@ -11,22 +11,28 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.nav-header {
+  font-size: 26px;
+}
 .row-2nav {
   display: flex;
+  height: 80px;
   align-items: baseline;
   gap: 50px;
 }
 .profile-container {
   display: flex;
   flex-direction: column;
+  font-size: 16px;
 }
 .username {
-  font-size: 24px;
   font-weight: bold;
   text-align: right;
+  color: black;
 }
-.nav-links {
+.nav-links a {
   text-decoration: none;
+  font-size: 12px;
   color: black;
   font-weight: bold;
 }
@@ -34,15 +40,17 @@ body {
   content: " | ";
   color: black;
 }
-.baseline-top {
+.second-nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 100px 10px 100px;
-  background-color: #778688ff;
+  background-color: lightpink;
 }
-.row-4baseline {
+.nav-4row {
   display: flex;
   gap: 30px;
+}
+.new a {
   color: black;
   font-weight: bold;
 }
@@ -50,11 +58,14 @@ body {
 .notification-bar {
   display: flex;
   gap: 30px;
+}
+.notification-item a {
   text-decoration: none;
+  color: black;
 }
 /*Main body */
 .main-container {
-  background-color: lightgreen;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   margin: 25px 100px 0px 100px;
@@ -63,8 +74,7 @@ body {
 
 .search-row {
   background-color: lightgrey;
-  width: 300px;
-  height: auto;
+  width: 250px;
   font-size: 12px;
 }
 
@@ -83,8 +93,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.lists{
-padding: 20px 5px 10px 20px;
+.lists {
+  padding: 20px 5px 10px 20px;
 }
 .lists:hover {
   background-color: pink;
@@ -105,51 +115,181 @@ padding: 20px 5px 10px 20px;
 .search-li {
   list-style: none;
   padding: 0;
+  color: black;
 }
 .video-tutorials {
   background-color: lightgrey;
-  width: 250px;
+  width: 173px;
   border: 1px solid #ddd;
 }
 .tutorials-list {
   list-style: none;
-
+  margin: 0;
   padding: 0;
-  width: 250px;
+  width: 173px;
   font-size: 12px;
+}
+.lists a {
+  color: black;
 }
 
 /*Middle  body container */
 .entries {
   width: 1200px;
 }
-
 h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  margin: 0px;
 }
 
-.footer-lists{
+/* Tab container */
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #00bcd4;
+  border-radius: 10px 10px 0 0;
+  background: #f9f9f9;
+  padding: 10px 0 0 0;
+}
+
+/* Each main tab group */
+.tab-group {
+  flex: 1;
+  text-align: center;
+  border-right: 2px solid #ddd;
+}
+
+.tab-group:last-child {
+  border-right: none;
+}
+
+.tab-group h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 6px 0;
+  color: #333;
+}
+
+/* Sub tabs */
+.sub-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.sub-tabs a {
+  text-decoration: none;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px 6px 0 0;
+  color: #444;
+  background: #eee;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.sub-tabs a:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+/* Active state */
+.sub-tabs a.active {
+  background: #00bcd4;
+  color: #fff;
+}
+/*Entries lists */
+.entry {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  align-items: flex-start;
+}
+
+.entry img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.entry-content {
+  flex: 1;
+}
+
+.entry-content h2 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.entry-content h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.meta a {
+  color: #6e0096ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tag {
+  color: #00bcd4;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.subscribed a{
+  color: #6b8e23;
+  font-weight: bold;
+}
+.tag2{
+  color: #6b8e23;
+}
+/*Footer section */
+.footer-lists {
   background-color: grey;
+  font-size: 10px;
+  text-decoration: none;
   margin-top: 10px;
   display: flex;
   height: 20px;
+  color: white;
   justify-content: space-between;
   padding: 10px 100px 10px 100px;
-
 }
-.footerlink-lists{
+.footerlink-lists {
   padding: 10px 100px 10px 100px;
-
 }
-.footerlinks{
+.Ft-lists a {
+  color: white;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footerlinks {
   list-style: disc; /* Or circle, square, etc. for bullet type */
-   padding: 0;
-   margin: 0;
-   display: flex; /* Use flexbox for horizontal layout */
-    gap: 40px;
+  padding: 0;
+  margin: 0;
+  display: flex; /*  for horizontal layout */
+  gap: 40px;
+  color: white;
 }
- ul li:first-child {
-      list-style-type: none; /* Remove bullet for the first item */
-    }
-
+ul li:first-child {
+  list-style-type: none; /* Remove bullet for the first item */
+}
