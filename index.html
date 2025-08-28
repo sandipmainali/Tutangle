@@ -10,54 +10,54 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <!--Top first row navigation-->
-    <div class="top-nav">
-      <div class="row-2nav">
-        <div class="nav-header"><h1>TuTangle</h1></div>
-        <div class="search-container">
-          <input
-            type="text"
-            placeholder="Search by Term, Member or Entry Title"
-            name="search"
-          />
-          <button class="submit" type="submit">
-            <i class="fa fa-search"> </i>Search
-          </button>
+    <header>
+      <!--Top first row navigation-->
+      <div class="top-nav">
+        <div class="row-2nav">
+          <div class="nav-header"><h1>TuTangle</h1></div>
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="Search by Term, Member or Entry Title"
+              name="search"
+            />
+            <button class="submit" type="submit">
+              <i class="fa fa-search"> </i>Search
+            </button>
+          </div>
+        </div>
+
+        <div class="profile-container">
+          <div class="username">Joe Burros</div>
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Setting</a>
+            <a href="#">Logout</a>
+          </div>
         </div>
       </div>
 
-      <div class="profile-container">
-        <div class="username">Joe Burros</div>
-        <div class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Setting</a>
-          <a href="#">Logout</a>
+      <!--Top Second row navigation-->
+      <div class="second-nav">
+        <div class="nav-4row">
+          <div class="new"><a href="#">Create New Entry</a></div>
+          <div class="new"><a href="#">My Topic Boxes</a></div>
+          <div class="new"><a href="#">Friends</a></div>
+          <div class="new"><a href="#">Invite New Member</a></div>
+        </div>
+        <div class="notification-bar">
+          <div class="notification-item">
+            <i class="fa-solid fa-box"></i>
+            <a href="#">Topic Boxes Invites - 2</a>
+          </div>
+          <div class="notification-item">
+            <i class="fa-solid fa-user"></i>
+            <a href="#">Friend Requests-0</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!--Top Second row navigation-->
-    <div class="baseline-top">
-      <div class="row-4baseline">
-        <div class="new-entry"><a href="#">Create New Entry</a></div>
-        <div class="Topic-box"><a href="#">My Topic Boxes</a></div>
-        <div class="Friends"><a href="#">Friends</a></div>
-        <div class="new-mem"><a href="#">Invite New Member</a></div>
-      </div>
-      <div class="notification-bar">
-        <div class="notification-item">
-          <i class="fa-solid fa-box"></i>
-          <a href="#">Topic Boxes Invites - 2</a>
-        </div>
-        <div class="notification-item">
-          <i class="fa-solid fa-user"></i>
-          <a href="#">Friend Requests-0</a>
-        </div>
-      </div>
-    </div>
-
+    </header>
     <!--Main body-->
     <div class="main-container">
       <!--Left side of main-container-->
@@ -111,13 +111,95 @@
         </div>
       </div>
       <!--Main middle row of main-container-->
+      <!-- Top Tabs -->
       <div class="entries">
         <h1>Entries</h1>
-        <!-- Top Tabs -->
-        <div class="top-tabs">
-          <div class="top-tab1">All Entries</div>
+        <div class="tabs-container">
+          <div class="tab-group">
+            <h3>All entries</h3>
+            <div class="sub-tabs">
+              <a href="#" class="active"> All members</a>
+              <a href="#">Friends</a>
+            </div>
+          </div>
+          <!--Subscribed group-->
+          <div class="tab-group">
+            <h3>Subscribed</h3>
+            <div class="sub-tabs">
+              <a href="#">New Entries</a>
+              <a href="#">Comments</a>
+            </div>
+          </div>
+        </div>
+        <!--Entry 1-->
+        <div class="entry">
+          <img src="images/1.jpg" alt="User" />
+          <div class="entry-content">
+            <h2>
+              <a href=""
+                >Day for Night by Francois Truffaut, a ground breaking film</a
+              >
+            </h2>
+            <div class="meta">
+              By <a href="#">Alan Coe</a> | February 10, 2012 |
+              <span class="subscribed"><a href="">Subscribed</a></span
+              ><br />
+              From Topic Box: <a href="#">My Favorite Movies</a>
+            </div>
+          </div>
+        </div>
+        <!-- Entry 2 -->
+        <div class="entry">
+          <img src="images/2.jpg" alt="User" />
+          <div class="entry-content">
+            <span class="tag">NEW ENTRY!</span>
+            <h2><a href="">Blade Runner, The Director's Cut</a></h2>
+            <div class="meta">
+              By <a href="#">Mary Pilot</a> | February 8, 2012 | <br />
+              From Topic Box: <a href="#">Behind The Scenes</a>
+            </div>
+          </div>
+        </div>
+        <!-- Entry 3 -->
+        <div class="entry">
+          <img src="images/3.png" alt="User" />
+          <div class="entry-content">
+            <span class="tag">NEW COMMENT!</span>
+            <h2>Best French Restaurant in Chicago?</h2>
+            <div class="meta">
+              By <a href="#">Jim Roy</a> | February 7, 2012 | <br />
+              From Topic Box: <a href="#">Chicago Restaurants Reviews</a>
+            </div>
+          </div>
+        </div>
 
-          <div class="top-tab1">Subscribed</div>
+        <!-- Entry 4 -->
+        <div class="entry">
+          <img src="images/5.png" alt="User" />
+          <div class="entry-content">
+            <h2>
+              The Meaning of Night, a Dark Book but incredibly well written
+            </h2>
+            <div class="meta">
+              By <a href="#">John Peter Moise</a> | February 7, 2012 |
+              <span class="subscribed"><a href="">Subscribed</a></span
+              ><br />
+              From Topic Box: <a href="#">Books read & Books to Read</a>
+            </div>
+          </div>
+        </div>
+        <!-- Entry 5 -->
+        <div class="entry">
+          <img src="images/4.jpg" alt="User" />
+          <div class="entry-content">
+            <span class="tag2">TOP BOX INVITE!</span>
+            <h2><a href="">Pea Pesto</a></h2>
+            <div class="meta">
+              By <a href="#">Marianne Gig</a> | February 7, 2012 | <br />
+
+              From Topic Box: <a href="#">Favourite Recipes</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -140,7 +222,6 @@
     <footer class="footer-container">
       <div class="footer-lists">
         <div class="Ft-lists">
-          
           <ul class="footerlinks">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us </a></li>
@@ -150,7 +231,7 @@
           </ul>
         </div>
         <div class="Ft-lists">
-          <a href="#"> ©Tutangle 2025</a>
+          <span> ©Tutangle 2025</span>
         </div>
       </div>
     </footer>
